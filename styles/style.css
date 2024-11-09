@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+header {
+  background: linear-gradient(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
+  padding: 2rem;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+header nav .linha {
+  border-top: solid 1px black;
+  width: 80%;
+}
+header nav ul {
+  display: flex;
+  gap: 2rem;
+}
+header nav a {
+  font-family: "Montserrat", sans-serif, sans-serif;
+  font-size: 22px;
+  color: #0C0421;
+}
+header nav a:hover {
+  font-weight: 700;
+}
+header #home {
+  max-width: 1040px;
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header #home .textos-home {
+  max-width: 464px;
+}
+header #home .textos-home h1 {
+  font-family: "Krona One", sans-serif, sans-serif;
+  font-size: 42px;
+  color: #0C0421;
+  margin-bottom: 2rem;
+}
+header #home .textos-home h1 span {
+  color: #4e75ff;
+}
+header #home .textos-home button {
+  font-family: "Montserrat", sans-serif, sans-serif;
+  font-size: 22px;
+  color: #FFFFFF;
+  background-color: #4e75ff;
+  border-radius: 40px;
+  font-weight: 600;
+  padding: 1rem 4rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+header #home .textos-home button:hover {
+  background-color: #85a0ff;
+}
+header #home .img-home {
+  max-width: 474px;
+}
+header #home .img-home img {
+  width: 100%;
+}
+
+#nosso-espaco {
+  margin: 0 auto;
+  width: 80%;
+}
+#nosso-espaco .detalhes {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+#nosso-espaco .detalhes .imgs-espaco, #nosso-espaco .detalhes .espaco-textos {
+  max-width: 500px;
+}
+#nosso-espaco .detalhes .espaco-textos h2 {
+  font-family: "Krona One", sans-serif, sans-serif;
+  font-size: 2rem;
+  color: #4e75ff;
+  font-weight: 500;
+}
+#nosso-espaco .detalhes .espaco-textos p {
+  font-family: "Montserrat", sans-serif, sans-serif;
+  font-size: 1.2rem;
+  color: #0C0421;
+}
+#nosso-espaco .detalhes .espaco-textos .separador {
+  width: 100%;
+}
+#nosso-espaco .detalhes:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+#servico {
+  background: linear-gradient(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
+}
+#servico .cards {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  padding: 5rem 0;
+  gap: 1.5rem;
+}
+#servico .cards .card {
+  text-align: center;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(202, 212, 250, 0.3) 100%);
+  padding: 1rem 1.5rem;
+  border-radius: 32px;
+  border: solid 2px #FFF;
+}
+#servico .cards .card-titulo {
+  font-family: "Krona One", sans-serif, sans-serif;
+  font-size: 1.6rem;
+  color: #0C0421;
+}
+#servico .cards .card-texto {
+  font-family: "Montserrat", sans-serif, sans-serif;
+  font-size: 1.2rem;
+  color: #0C0421;
+}
+
+#desconto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#desconto .desconto-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#desconto .desconto-form h4 {
+  font-family: "Krona One", sans-serif, sans-serif;
+  font-size: 2rem;
+  color: #0C0421;
+}
+#desconto .desconto-form p {
+  font-family: "Montserrat", sans-serif, sans-serif;
+  font-size: 1.25rem;
+  color: #0C0421;
+  padding: 2rem 0;
+}
+#desconto .desconto-form .input-btn {
+  border: 1px solid #85a0ff;
+  width: 90%;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+#desconto .desconto-form .input-btn input {
+  border: none;
+  outline: none;
+  padding: 1rem 0;
+  width: 65%;
+  margin: 0 2rem;
+  font-family: "Montserrat", sans-serif, sans-serif;
+  font-size: 1.25rem;
+  color: #0C0421;
+}
+#desconto .desconto-form .input-btn button {
+  width: auto;
+  width: 35%;
+  border: none;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: #4e75ff;
+  font-family: "Montserrat", sans-serif, sans-serif;
+  font-size: 1.25rem;
+  color: #FFFFFF;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#desconto .desconto-form .input-btn button:hover {
+  background-color: #85a0ff;
+}
+
+#contatos {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  gap: 1.75rem;
+  margin-block: 100px;
+}
+#contatos .contatos-imgs {
+  max-width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1.5rem;
+  justify-content: space-between;
+}
+#contatos .contatos-imgs img {
+  width: 100%;
+}
+#contatos .contatos-imgs img:nth-child(n+2) {
+  width: 47%;
+}
+#contatos .contatos-form {
+  max-width: 50%;
+  background: linear-gradient(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+  width: 100%;
+  border-radius: 48px;
+}
+#contatos .contatos-form h4 {
+  font-family: "Krona One", sans-serif, sans-serif;
+  font-size: 2rem;
+  color: #4e75ff;
+}
+#contatos .contatos-form p {
+  font-family: "Montserrat", sans-serif, sans-serif;
+  font-size: 1.25rem;
+  color: #0C0421;
+  padding-top: 1.5rem;
+}
+#contatos .contatos-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+#contatos .contatos-form .form-group label {
+  font-family: "Montserrat", sans-serif, sans-serif;
+  font-size: 1.125rem;
+  color: #0C0421;
+  font-weight: 600;
+  padding: 1.5rem 0 0.5rem 0;
+}
+#contatos .contatos-form .form-group input, #contatos .contatos-form .form-group textarea {
+  padding: 1rem;
+  border: none;
+  border-radius: 32px;
+  font-family: "Montserrat", sans-serif, sans-serif;
+  font-size: 1rem;
+  color: #5D586C;
+  outline: none;
+}
+#contatos .contatos-form .btn {
+  width: 100%;
+  padding: 1rem;
+  font-family: "Krona One", sans-serif, sans-serif;
+  font-size: 1.25rem;
+  color: #FFFFFF;
+  font-weight: 600;
+  background-color: #4e75ff;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: 0.3s;
+}
+#contatos .contatos-form .btn:hover {
+  background-color: #85a0ff;
+}
+
+footer {
+  height: 72px;
+  background-color: #E8F5C8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer small {
+  font-family: "Montserrat", sans-serif, sans-serif;
+  font-size: 1rem;
+  color: #0C0421;
+}/*# sourceMappingURL=style.css.map */

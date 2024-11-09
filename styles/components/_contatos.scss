@@ -1,0 +1,83 @@
+@use '../abstract/mixins';
+@use '../abstract/variaveis';
+
+#contatos {
+    @include mixins.margem-central(80%);
+    display: flex;
+    gap: 1.75rem;
+    margin-block: 100px;
+    
+    .contatos-imgs {
+        max-width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 1.5rem;
+        justify-content: space-between;
+
+        img {
+            width: 100%;
+            &:nth-child(n + 2) {
+                width: 47%;
+            }
+        }
+    }
+
+    .contatos-form {
+        max-width: 50%;
+        background: variaveis.$gradiente-primario;
+        display: flex;
+        flex-direction: column;
+        padding: 2.5rem;
+        width: 100%;
+        border-radius: 48px;
+
+        h4 {
+            @include mixins.ff-fs-cl(variaveis.$ft-titulos, 2rem, variaveis.$cor-secundaria);
+        }
+
+        p {
+            @include mixins.ff-fs-cl(variaveis.$ft-textos, 1.25rem, variaveis.$cor-primaria);
+            padding-top: 1.5rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                @include mixins.ff-fs-cl(variaveis.$ft-textos, 1.125rem, variaveis.$cor-primaria);
+                font-weight: 600;
+                padding: 1.5rem 0 .5rem 0;
+            }
+
+            input {
+                padding: 1rem;
+                border: none;
+                border-radius: 32px;
+                @include mixins.ff-fs-cl(variaveis.$ft-textos, 1rem, variaveis.$cor-cinza-escuro);
+                outline: none;
+            }
+
+            textarea {
+                @extend input;
+            }
+        }
+
+        .btn {
+            width: 100%;
+            padding: 1rem;
+            @include mixins.ff-fs-cl(variaveis.$ft-titulos, 1.25rem, variaveis.$cor-branco);
+            font-weight: 600;
+            background-color: variaveis.$cor-secundaria;
+            border: none;
+            border-radius: 40px;
+            cursor: pointer;
+            margin-top: 2rem;
+            transition: .3s;
+        }
+
+        .btn:hover {
+            background-color: variaveis.$cor-terciaria;
+        }
+    }
+}

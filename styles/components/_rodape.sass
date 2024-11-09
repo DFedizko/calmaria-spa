@@ -1,0 +1,12 @@
+@use '../abstract/variaveis'
+@use '../abstract/mixins'
+
+footer 
+    height: 72px
+    background-color: variaveis.$cor-quaternaria
+    display: flex
+    align-items: center
+    justify-content: center
+
+    small 
+        @include mixins.ff-fs-cl(variaveis.$ft-textos, 1rem, variaveis.$cor-primaria)
